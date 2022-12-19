@@ -42,7 +42,7 @@ export const App = () => {
           console.log(erroor)
         });
     }
-  }, [query, page]);
+  }, [query, page, erroor]);
 
 
   const handleSubmit = query => {
