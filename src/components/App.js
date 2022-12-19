@@ -14,9 +14,9 @@ export const App = () => {
   const [page, setPage] = useState(1);
   const [query, setQuery] = useState('');
   const [images, setImages] = useState([]);
-  const [ setError] = useState(null);
+  const [error, setError] = useState(null);
   const [loading, setLoading] = useState(null);
-  const [ setIsBtnVisible] = useState(null);
+  const [isBtnVisible, setIsBtnVisible] = useState(false);
   const [total, setTotal] = useState(0);
   
 
@@ -54,7 +54,7 @@ export const App = () => {
     setPage(page => page + 1);
     setLoading(true);
 
-    const amountOfPages = total / 12 - page;
+  const amountOfPages = total / 12 - page;
     if (amountOfPages < 0) {
       setIsBtnVisible(false);
     }
