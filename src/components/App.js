@@ -14,9 +14,9 @@ export const App = () => {
   const [page, setPage] = useState(1);
   const [query, setQuery] = useState('');
   const [images, setImages] = useState([]);
-  const [error, setError] = useState(null);
+  const [ setError] = useState(null);
   const [loading, setLoading] = useState(null);
-  const [isBtnVisible, setIsBtnVisible] = useState(null);
+  const [ setIsBtnVisible] = useState(null);
   const [total, setTotal] = useState(0);
   
 

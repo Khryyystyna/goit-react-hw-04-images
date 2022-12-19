@@ -14,7 +14,6 @@ export const Searchbar = ({onSubmit}) => {
 
   const handleQuery = event => {
     setQuery(event.currentTarget.value.toLowerCase());
-    console.log(event.currentTarget.value);
   };
 
   const handleSubmit = event => {
